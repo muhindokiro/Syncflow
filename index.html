@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SyncFlow Group — Odoo, delivered for Africa</title>
+<meta name="description" content="Official Odoo partner: implementation, integration, customization, SLA support and managed cloud across Kenya, Uganda, Tanzania, Rwanda, Ethiopia and DR Congo.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="SyncFlow Group — Odoo, delivered for Africa">
+<meta property="og:description" content="Official Odoo partner: implementation, integration, customization, SLA support and managed cloud across East and Central Africa.">
+<meta property="og:image" content="assets/syncflow-banner.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1a1433;--pu:#5b4db5;--te:#22a3a8;--bg:#fafaff;--card:#fff;--tx:#2b2646;--mu:#6b6786;--ln:#e6e3f5;--soft:#f0eefc;--lf:none;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#110d24;--card:#1b1636;--tx:#e9e6fa;--mu:#a7a2c6;--ln:#2d2750;--soft:#1f1a3d;--lf:brightness(0) invert(1)}}
+:root[data-theme="dark"]{--bg:#110d24;--card:#1b1636;--tx:#e9e6fa;--mu:#a7a2c6;--ln:#2d2750;--soft:#1f1a3d;--lf:brightness(0) invert(1)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.65 Lato,system-ui,-apple-system,Segoe UI,sans-serif}
+h1,h2,h3,.ff{font-family:Poppins,system-ui,sans-serif;line-height:1.2;margin:0}
+a{color:inherit;text-decoration:none}
+.w{width:min(1160px,100% - 40px);margin:auto}
+section{padding:84px 0}
+.eb{font:600 .78rem/1 Poppins,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--te);margin-bottom:14px}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;margin-bottom:14px}
+.lead{color:var(--mu);max-width:640px;font-size:1.06rem}
+.grad{background:linear-gradient(90deg,var(--pu),var(--te));-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-block;font:600 .95rem Poppins,sans-serif;padding:13px 26px;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:.2s}
+.b1{background:linear-gradient(90deg,var(--pu),var(--te));color:#fff}.b1:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(91,77,181,.4)}
+.b2{border-color:rgba(255,255,255,.35);color:#fff}.b2:hover{background:rgba(255,255,255,.1)}
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
+.nv{display:flex;align-items:center;justify-content:space-between;height:68px}
+.nv img{height:36px;width:auto;filter:var(--lf)}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font:500 .9rem Poppins,sans-serif}
+nav a:hover{color:var(--pu)}
+.nr{display:flex;gap:12px;align-items:center}
+.nr .btn{padding:9px 20px;font-size:.85rem}
+#mb{display:none;background:none;border:1px solid var(--ln);border-radius:10px;width:42px;height:42px;color:var(--tx);font-size:1.3rem;cursor:pointer}
+/* hero */
+.hero{background:radial-gradient(900px 500px at 85% 20%,rgba(34,163,168,.28),transparent 60%),radial-gradient(800px 500px at 10% 90%,rgba(91,77,181,.45),transparent 60%),#150f2e;color:#fff;padding:110px 0 90px;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(2.4rem,6.5vw,4.6rem);font-weight:800;max-width:800px}
+.hero p{color:#c9c4e8;font-size:1.15rem;max-width:620px;margin:22px 0 32px}
+.hero .eb{color:#4fd1d5}
+.hb{display:flex;gap:14px;flex-wrap:wrap}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:44px}
+.tags span{font-size:.82rem;padding:7px 14px;border:1px solid rgba(255,255,255,.18);border-radius:999px;color:#d8d4f2;background:rgba(255,255,255,.05)}
+.sw{position:absolute;right:-60px;bottom:-30px;width:min(620px,70%);opacity:.5;pointer-events:none}
+/* stats */
+.st{margin-top:-44px;position:relative;z-index:2}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border:1px solid var(--ln);border-radius:20px;box-shadow:0 18px 50px rgba(26,20,51,.12);overflow:hidden}
+.sg div{padding:26px 20px;text-align:center;border-right:1px solid var(--ln)}.sg div:last-child{border:0}
+.sg b{display:block;font:700 2.1rem Poppins,sans-serif}.sg small{color:var(--mu)}
+/* grids */
+.g{display:grid;gap:22px;margin-top:44px}
+.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.cd{background:var(--card);border:1px solid var(--ln);border-radius:18px;padding:28px;transition:.25s}
+.cd:hover{transform:translateY(-4px);border-color:var(--pu);box-shadow:0 14px 34px rgba(91,77,181,.14)}
+.cd h3{font-size:1.15rem;font-weight:600;margin-bottom:8px}.cd p{margin:0;color:var(--mu);font-size:.95rem}
+.ic{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,var(--pu),var(--te));color:#fff;font:700 1.1rem Poppins,sans-serif;margin-bottom:18px}
+.alt{background:var(--soft)}
+.sp{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.cp{display:grid;gap:12px;margin-top:22px}
+.cp div{display:flex;justify-content:space-between;gap:14px;padding:14px 18px;background:var(--card);border:1px solid var(--ln);border-radius:12px;font-size:.95rem}
+.cp b{font-family:Poppins,sans-serif;font-weight:600;white-space:nowrap}
+.cmp{background:var(--card);border:1px solid var(--ln);border-radius:20px;padding:32px}
+.bar{height:14px;border-radius:99px;margin:8px 0 22px;background:var(--ln);overflow:hidden}.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--pu),var(--te))}
+/* coverage */
+.cv{position:relative}.cv .fl{font:600 .72rem Poppins,sans-serif;letter-spacing:.1em;color:var(--te);text-transform:uppercase;margin-bottom:6px}
+.cv h3{font-size:1.25rem}
+/* chips */
+.ch{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+.ch .cd{padding:22px}.ch h3{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--te);margin-bottom:8px}.ch p{color:var(--tx);font-weight:700;font-size:.92rem}
+/* process */
+.pr{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:48px;counter-reset:s}
+.pr div{background:var(--card);border:1px solid var(--ln);border-radius:16px;padding:22px 16px;text-align:center;font:600 .95rem Poppins,sans-serif;counter-increment:s}
+.pr div::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;margin:0 auto 12px;border-radius:50%;background:linear-gradient(135deg,var(--pu),var(--te));color:#fff}
+.note{margin-top:28px;padding:20px 24px;border-left:4px solid var(--te);background:var(--card);border-radius:0 14px 14px 0;color:var(--mu)}
+/* pricing */
+.mk{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.mk button{font:600 .85rem Poppins,sans-serif;padding:8px 18px;border-radius:99px;border:1px solid var(--ln);background:var(--card);color:var(--tx);cursor:pointer}
+.mk button[aria-pressed=true]{background:linear-gradient(90deg,var(--pu),var(--te));color:#fff;border-color:transparent}
+.pc{display:flex;flex-direction:column}.pc.f{border:2px solid var(--pu);position:relative}
+.pc.f::after{content:"Most popular";position:absolute;top:-13px;right:22px;background:var(--pu);color:#fff;font:600 .72rem Poppins,sans-serif;padding:5px 12px;border-radius:99px}
+.pc .am{font:700 2.4rem Poppins,sans-serif;margin:10px 0 2px}.pc small{color:var(--mu)}
+.pc ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:9px;font-size:.93rem}
+.pc li::before{content:"✓";color:var(--te);font-weight:700;margin-right:10px}
+.tb{width:100%;border-collapse:collapse;margin-top:14px;font-size:.93rem}
+.tb th,.tb td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--ln)}.tb th{font:600 .75rem Poppins,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--mu)}
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--ln);border-radius:16px;padding:8px 14px}
+h3.sub{font-size:1.35rem;margin:56px 0 4px}
+.fine{font-size:.85rem;color:var(--mu);margin-top:18px}
+/* cta */
+.cta{background:radial-gradient(700px 400px at 80% 0,rgba(34,163,168,.3),transparent 60%),#150f2e;color:#fff}
+.cta h2{color:#fff}.cta .lead{color:#c9c4e8}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.ci{display:grid;gap:14px;margin-top:28px;color:#e2defa}.ci b{display:block;font:600 .75rem Poppins,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#4fd1d5}
+form{display:grid;gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);padding:28px;border-radius:20px}
+input,textarea,select{width:100%;font:inherit;padding:13px 15px;border-radius:12px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff}
+select option{color:#111}
+input::placeholder,textarea::placeholder{color:#a9a4cc}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--te);outline-offset:1px}
+footer{background:#0e0a1f;color:#a7a2c6;padding:44px 0 36px;font-size:.9rem}
+.fr{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer img{height:34px;filter:brightness(0) invert(1)}
+footer a:hover{color:#fff}
+@media(max-width:960px){
+.g3,.ch{grid-template-columns:repeat(2,1fr)}.pr{grid-template-columns:repeat(3,1fr)}.sp,.ct{grid-template-columns:1fr;gap:36px}.sg{grid-template-columns:repeat(2,1fr)}.sg div:nth-child(2){border-right:0}.sg div:nth-child(-n+2){border-bottom:1px solid var(--ln)}
+#mb{display:block}.nr .btn{display:none}
+nav{position:absolute;top:68px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--ln);display:none}
+nav.o{display:block}nav ul{flex-direction:column;gap:0;padding:8px 20px 16px}nav li a{display:block;padding:12px 0;border-bottom:1px solid var(--ln)}}
+@media(max-width:600px){section{padding:64px 0}.g3,.g2,.ch{grid-template-columns:1fr}.pr{grid-template-columns:repeat(2,1fr)}.hero{padding:80px 0 80px}.btn{width:100%;text-align:center}.hb{width:100%}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<header><div class="w nv">
+<a href="#top" aria-label="SyncFlow Group home"><img src="assets/syncflow-wordmark.png" alt="SyncFlow Group"></a>
+<nav id="nav"><ul><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#coverage">Coverage</a></li><li><a href="#integrations">Integrations</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<div class="nr"><a class="btn b1" href="#contact">Book a consultation</a><button id="mb" aria-label="Menu" aria-expanded="false">☰</button></div>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="w">
+<div class="eb">Official Odoo Partner · East &amp; Central Africa</div>
+<h1>Odoo, delivered <span class="grad" style="background:linear-gradient(90deg,#9d8cff,#4fd1d5);-webkit-background-clip:text;background-clip:text">for Africa.</span></h1>
+<p>We implement, integrate, customize, host and support Odoo end to end, so your business runs on modern ERP that is compliant by design.</p>
+<div class="hb"><a class="btn b1" href="#contact">Start your project</a><a class="btn b2" href="#services">Explore services</a></div>
+<div class="tags"><span>Consulting</span><span>Development</span><span>Integration</span><span>Managed Cloud</span></div>
+</div>
+<svg class="sw" viewBox="0 0 600 160" fill="none" aria-hidden="true"><defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#5b4db5"/><stop offset="1" stop-color="#22a3a8"/></linearGradient></defs><path d="M0 120C180 160 420 130 570 40" stroke="url(#g)" stroke-width="10" stroke-linecap="round"/><circle cx="578" cy="36" r="14" stroke="url(#g)" stroke-width="8"/></svg></div>
+
+<div class="st"><div class="w"><div class="sg">
+<div><b class="grad">6</b><small>Markets served</small></div><div><b class="grad">5</b><small>Integrated service lines</small></div><div><b class="grad">100%</b><small>Focused on Odoo</small></div><div><b class="grad">PgMP · PMP</b><small>PRINCE2 Agile led</small></div>
+</div></div></div>
+
+<section id="about"><div class="w sp">
+<div><div class="eb">About us</div><h2>Enterprise ERP discipline, Odoo speed.</h2>
+<p class="lead">SyncFlow Group is an Odoo consulting and development company helping businesses across East and Central Africa run on modern, compliant ERP. Formerly ServiceScope Systems, we are now an official Odoo partner.</p>
+<p class="lead">We are built and led by delivery professionals with enterprise ERP pedigree (SAP Business One and S/4HANA) and formal program-management credentials: PgMP, PMP and PRINCE2 Agile.</p></div>
+<div class="cmp"><div class="eb">Why Odoo, why now</div>
+<p style="margin:0 0 18px"><b class="ff">The compliance wave.</b> Real-time e-invoicing is now mandatory across the region, and every business needs ERP that is compliant by design.</p>
+<div class="ff" style="font-size:.85rem;color:var(--mu)">Legacy ERP · ~$500+ / user / month</div><div class="bar"><i style="width:100%"></i></div>
+<div class="ff" style="font-size:.85rem;color:var(--mu)">Odoo Enterprise · ~$24 / user / month</div><div class="bar"><i style="width:5%"></i></div>
+<p class="fine" style="margin:0">Regional Odoo Enterprise ≈ $19–24 per user per month, billed yearly. Verify current rates at odoo.com/pricing.</p></div>
+</div></section>
+
+<section id="services" class="alt"><div class="w">
+<div class="eb">Services</div><h2>Five service lines, one accountable partner.</h2><p class="lead">From first workshop to long-term optimization, everything your Odoo needs under one roof.</p>
+<div class="g g3">
+<div class="cd"><div class="ic">1</div><h3>Implementation</h3><p>Net-new Odoo rollouts: discovery, configuration, data migration, training and go-live.</p></div>
+<div class="cd"><div class="ic">2</div><h3>Integration &amp; Development</h3><p>Fiscalization, payments, banking, e-commerce and logistics wired directly into Odoo.</p></div>
+<div class="cd"><div class="ic">3</div><h3>Customization</h3><p>From Odoo Studio configuration to custom modules, workflows, reports and dashboards.</p></div>
+<div class="cd"><div class="ic">4</div><h3>SLA Support</h3><p>Tiered retainers with response guarantees and compliance-rate update cover.</p></div>
+<div class="cd"><div class="ic">5</div><h3>Managed Cloud &amp; Success</h3><p>Hosting, version upgrades and continuous optimization, delivered as a subscription.</p></div>
+<div class="cd" style="background:linear-gradient(135deg,var(--pu),var(--te));color:#fff;border:0"><h3>Not sure where to start?</h3><p style="color:#eef;margin-bottom:18px">A discovery session scopes your needs, and the fee is credited to your project on sign-off.</p><a class="btn" style="background:#fff;color:var(--ink)" href="#contact">Talk to us</a></div>
+</div></div></section>
+
+<section id="coverage"><div class="w">
+<div class="eb">Coverage</div><h2>Where we work</h2><p class="lead">Net-new delivery in six markets, plus integration and development across Africa.</p>
+<div class="g g3">
+<div class="cd cv"><div class="fl">eTIMS (OSCU)</div><h3>Kenya</h3><p>Mandatory for all businesses and native in Odoo.</p></div>
+<div class="cd cv"><div class="fl">EFRIS</div><h3>Uganda</h3><p>Mandatory VAT e-invoicing, delivered with a custom connector.</p></div>
+<div class="cd cv"><div class="fl">VFD / EFD</div><h3>Tanzania</h3><p>Real-time device model, with Zanzibar as a separate VAT jurisdiction.</p></div>
+<div class="cd cv"><div class="fl">EBM / EIS</div><h3>Rwanda</h3><p>Real-time since 2021, and our proven strength.</p></div>
+<div class="cd cv"><div class="fl">e-VAT</div><h3>Ethiopia</h3><p>Phased roll-out in a large emerging market.</p></div>
+<div class="cd cv"><div class="fl">e-VAT · OHADA</div><h3>DR Congo</h3><p>Nascent regime, Francophone, with low competition.</p></div>
+</div></div></section>
+
+<section id="integrations" class="alt"><div class="w">
+<div class="eb">Engineering</div><h2>Integration expertise</h2><p class="lead">Your Odoo connected cleanly to the systems your business already depends on.</p>
+<div class="ch">
+<div class="cd"><h3>Fiscalization</h3><p>eTIMS · EFRIS · EBM · VFD</p></div><div class="cd"><h3>Mobile money</h3><p>M-Pesa Daraja · MoMo · Airtel · Telebirr</p></div>
+<div class="cd"><h3>Banking</h3><p>Host-to-host · ISO 20022 · Bulk pay</p></div><div class="cd"><h3>Statutory payroll</h3><p>NSSF · SHA · PAYE · RSSB &amp; more</p></div>
+<div class="cd"><h3>E-commerce</h3><p>Shopify · WooCommerce · Jumia</p></div><div class="cd"><h3>Logistics / TMS</h3><p>Freight ops · Shipment tracking</p></div>
+<div class="cd"><h3>Messaging</h3><p>WhatsApp Business · SMS gateways</p></div><div class="cd"><h3>BI &amp; analytics</h3><p>Dashboards · Power BI feeds</p></div>
+</div></div></section>
+
+<section id="process"><div class="w">
+<div class="eb">Methodology</div><h2>How we deliver</h2>
+<div class="pr"><div>Discover</div><div>Design</div><div>Build &amp; Integrate</div><div>Migrate &amp; Train</div><div>Go-Live</div><div>Support &amp; Optimize</div></div>
+<div class="note"><b class="ff" style="color:var(--tx)">PM-led governance.</b> Every engagement runs on PRINCE2 Agile and PMP discipline: fixed scope, clear stage gates, transparent reporting, and a clean handover into Managed Cloud &amp; Success.</div>
+</div></section>
+
+<section id="pricing" class="alt"><div class="w">
+<div class="eb">Engagement &amp; pricing</div><h2>Clear packages, priced per market.</h2>
+<p class="lead">Indicative service fees in USD for 2026. They exclude the Odoo software subscription, which you pay to Odoo. Final quotes follow discovery and scope.</p>
+<div class="mk" id="mk" role="group" aria-label="Select market"></div>
+<div class="g g3" style="margin-top:30px">
+<div class="cd pc"><h3>Launch</h3><small>Micro / small business · 3–5 users</small><div class="am" data-b="3500"></div><small>starting price</small><ul><li>1–2 core apps</li><li>eTIMS + mobile money</li><li>Training &amp; go-live</li></ul></div>
+<div class="cd pc f"><h3>Professional</h3><small>SME · 10–25 users</small><div class="am" data-b="9000"></div><small>starting price</small><ul><li>Multi-module + payroll</li><li>Fiscalization + integrations</li><li>Migration &amp; hypercare</li></ul></div>
+<div class="cd pc"><h3>Enterprise</h3><small>Mid-market · 30+ users</small><div class="am" data-b="28000"></div><small>starting price</small><ul><li>Multi-company / country</li><li>Custom modules</li><li>Phased rollout</li></ul></div>
+</div>
+<p class="fine">Expanding to more countries? The multi-country add-on starts from <b class="am2" data-b="6000"></b> per additional country.</p>
+
+<h3 class="sub">SLA support retainers</h3><p class="lead" style="font-size:.95rem">Compliance-rate updates (KRA / URA / RRA / TRA) are included from Silver upward.</p>
+<div class="tw"><table class="tb"><thead><tr><th>Tier</th><th>Coverage</th><th>Response</th><th>Hours / mo</th><th>From / month</th></tr></thead><tbody>
+<tr><td><b>Bronze</b></td><td>Business hours · email / portal</td><td>Next business day</td><td>4</td><td>$250</td></tr>
+<tr><td><b>Silver</b></td><td>Extended hours · phone</td><td>Same business day</td><td>10</td><td>$650</td></tr>
+<tr><td><b>Gold</b></td><td>Priority · monitoring</td><td>4 hours</td><td>20</td><td>$1,600</td></tr>
+<tr><td><b>Platinum</b></td><td>Near-24/7 business-critical</td><td>1 hour</td><td>40</td><td>$3,800</td></tr></tbody></table></div>
+
+<h3 class="sub">Managed Cloud &amp; Success</h3>
+<div class="g g3" style="margin-top:20px">
+<div class="cd"><h3>Essential <span class="grad" style="float:right">from $150/mo</span></h3><p>Managed hosting operations, monitoring, daily backups, minor updates and uptime checks.</p></div>
+<div class="cd"><h3>Growth <span class="grad" style="float:right">from $500/mo</span></h3><p>Everything in Essential, plus an annual version upgrade, quarterly health check and 4 optimization hours a month.</p></div>
+<div class="cd"><h3>Scale <span class="grad" style="float:right">from $1,500/mo</span></h3><p>Everything in Growth, plus a dedicated success manager, roadmap advisory and multi-company operations.</p></div>
+</div>
+<p class="fine">Also available: custom modules, Studio changes, report and dashboard packs, version upgrades and health-check audits, quoted per scope.</p>
+</div></section>
+
+<section id="why"><div class="w">
+<div class="eb">Our edge</div><h2>Why SyncFlow Group</h2>
+<div class="g g3">
+<div class="cd"><div class="ic">◎</div><h3>Regional compliance depth</h3><p>We know eTIMS, EFRIS, EBM and VFD. Compliance is designed in, not bolted on.</p></div>
+<div class="cd"><div class="ic">⇄</div><h3>Integration engineering</h3><p>Payments, banking, e-commerce and logistics connected cleanly to Odoo.</p></div>
+<div class="cd"><div class="ic">✓</div><h3>Certified, PM-led delivery</h3><p>PgMP, PMP and PRINCE2 discipline on every engagement for predictable outcomes.</p></div>
+<div class="cd"><div class="ic">↻</div><h3>Support that compounds</h3><p>Managed Cloud &amp; Success keeps you optimized long after go-live.</p></div>
+<div class="cd"><div class="ic">★</div><h3>Senior, responsive teams</h3><p>Lean and senior, so you talk to the people doing the work.</p></div>
+<div class="cd"><div class="ic">◆</div><h3>Partner-backed</h3><p>Official Odoo partner with direct vendor support and roadmap access.</p></div>
+</div></div></section>
+
+<section id="contact" class="cta"><div class="w ct">
+<div><div class="eb" style="color:#4fd1d5">Contact</div><h2>Let's build your Odoo.</h2>
+<p class="lead">Implementation · Integration · Customization · SLA Support · Managed Cloud</p>
+<div class="ci"><div><b>Location</b>Nairobi, Kenya</div><div><b>Email</b><a href="mailto:hello@syncflow.group">hello@syncflow.group</a></div><div><b>Website</b>www.syncflow.group</div><div><b>LinkedIn</b><a href="https://linkedin.com/in/daviesalbert2026" rel="noopener">linkedin.com/in/daviesalbert2026</a></div></div></div>
+<form id="f"><input name="n" placeholder="Your name" required aria-label="Your name"><input name="e" type="email" placeholder="Work email" required aria-label="Work email">
+<select name="s" aria-label="Interested in"><option>Implementation</option><option>Integration &amp; Development</option><option>Customization</option><option>SLA Support</option><option>Managed Cloud &amp; Success</option></select>
+<textarea name="m" rows="4" placeholder="Tell us about your business and goals" aria-label="Message"></textarea>
+<button class="btn b1" type="submit">Send enquiry</button></form>
+</div></section>
+</main>
+<footer><div class="w fr"><img src="assets/syncflow-wordmark.png" alt="SyncFlow Group"><div>© 2026 SyncFlow Group · Official Odoo Partner · Formerly ServiceScope Systems</div><div><a href="#top">Back to top ↑</a></div></div></footer>
+<script>
+const M={Kenya:1,Uganda:1.05,Tanzania:1.1,Rwanda:1,Ethiopia:1.2,"DR Congo":1.35},mk=document.getElementById('mk');
+function set(k){mk.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',b.textContent===k));
+document.querySelectorAll('[data-b]').forEach(e=>{const v=Math.round(e.dataset.b*M[k]/50)*50;e.textContent='$'+v.toLocaleString('en-US')})}
+Object.keys(M).forEach(k=>{const b=document.createElement('button');b.textContent=k;b.onclick=()=>set(k);mk.appendChild(b)});set('Kenya');
+const mb=document.getElementById('mb'),nav=document.getElementById('nav');
+mb.onclick=()=>{const o=nav.classList.toggle('o');mb.setAttribute('aria-expanded',o)};
+nav.querySelectorAll('a').forEach(a=>a.onclick=()=>{nav.classList.remove('o');mb.setAttribute('aria-expanded',false)});
+document.getElementById('f').onsubmit=e=>{e.preventDefault();const d=new FormData(e.target);
+location.href='mailto:hello@syncflow.group?subject='+encodeURIComponent('Enquiry: '+d.get('s'))+'&body='+encodeURIComponent(d.get('m')+'\n\n'+d.get('n')+' ('+d.get('e')+')')};
+</script></body></html>
